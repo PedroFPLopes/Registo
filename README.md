@@ -2,9 +2,32 @@
 ## Registo 2
 ## Registo 3
 
-\textbf{Text Bold	Text}
-\textit{Text Italic	Text	}
-\texttt{Typewriter	Text	}
-\ltextsf{Text Sans-Serif	Text	}
-\textrm{Text Serif (Roman)	Text	}
-\underline{Text Underline	Text–––––	}
+\documentclass{article}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Introduction to \LaTeX{}}
+\author{Author's Name}
+
+\maketitle
+
+\begin{abstract}
+The abstract text goes here.
+\end{abstract}
+
+\section{Introduction}
+Here is the text of your introduction.
+
+\begin{equation}
+    \label{simple_equation}
+    \alpha = \sqrt{ \beta }
+\end{equation}
+
+\subsection{Subsection Heading Here}
+Write your subsection text here.
+
+\section{Conclusion}
+Write your conclusion here.
+
+\end{document}
