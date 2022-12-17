@@ -1,0 +1,258 @@
+
+
+
+
+
+
+<!DOCTYPE html>  <!-- The <!DOCTYPE> declaration for HTML5 is: -->
+<html>
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->
+<head>
+<title> REGISTO </title> <!-- Texto a apresentar no separador da pagina -->
+<meta charset="UTF-8"> <!-- The Unicode Character Sets -->
+<link rel="icon" type="image/x-icon" href="WEB_PL01_Media/register_01.ico">
+<link rel="stylesheet" href="01_0_Registo_Apresentacao.css">
+
+
+<!--
+<style>
+	body { background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+</style>
+-->
+
+
+</head>
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->
+<hr> <!-- SEPARADOR: head / body -->
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->
+
+
+<h1>Ficha de <strong>Registo</strong></h1>
+<p><strong>Insira </strong> os dados:</p>
+
+
+
+<hr> <hr> 
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->
+
+<form action="/action_page.php" autocomplete="on">
+
+	<table style="width:auto">
+	<tr>
+		<td> <label for="id_Reg">ID:</label> </td>
+		<td> <input type="text" id="id_Reg" name="id_Reg" disabled></td>
+
+	</tr>
+	<tr>
+		<td> <label for="sig123_Reg">SIGLA123: </label> </td>
+		<td> <input type="number" id="id_Reg" name="id_Reg"> </td>
+		<td> <input type="submit" value="Validar"> </td>
+	</tr>
+	<tr>
+		<td> <label for="sigABC_Reg">SIGLAABC:</label> </td>
+		<td> <input type="text" id="sigABC_Reg" name="sigABC_Reg"> </td>
+		<td> <input type="submit" value="Validar"> </td>		
+	</tr>
+	<tr><td><hr></tr></td>
+	<tr>
+		<td> <label for="nome_Reg">NOME:</label> </td>
+		<td> <input type="text" id="nome_Reg" name="nome_Reg" required> </td>
+		<td> <button onclick="myFunction() value="Validar"></button> </td>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("nome_Reg");
+				x.disabled = true;
+			}
+		</script>
+
+	</tr>
+	<tr>
+		<td> <label for="email_Reg">EMAIL:</label> </td>
+		<td> <input type="email" id="email_Reg" name="email_Reg" autocomplete="on"> </td>
+		<td> <input type="submit" value="Validar"> </td>
+	</tr>
+	<tr>
+		<td> <label for="passe_Reg">PASSE:</label> </td>
+		<td> <input type="password" id="passe_Reg" name="passe_Reg"> </td>
+		<td> <input type="submit" value="Validar"> </td>
+	</tr>
+	
+	<tr>
+		<td> <label for="telefone_Reg">TELEFONE:</label> </td>
+		<td> <input type="tel" id="telefone_Reg" name="telefone_Reg"> </td>
+		<td> <input type="submit" value="Validar"> </td>
+	</tr>
+	<tr>
+		<td> <label for="telemovel_Reg">TELEMOVEL:</label> </td>
+		<td> <input type="tel" id="telemovel_Reg" name="telemovel_Reg"> </td>
+		<td> <input type="submit" value="Validar"> </td>
+	</tr>
+	<tr><td><hr></tr></td> 
+	<tr>
+		<td> <label for="cor_Reg">COR:</label> </td>
+		<td> <input type="color" id="cor_Reg" name="cor_Reg"> </td>
+		<td> <input type="submit" value="Validar"> </td>
+	</tr>
+	<tr>
+		<td> <label for="deslisante_Reg">DESLISANTE:</label> </td>
+		<td> <input type="range" id="deslisante_Reg" name="deslisante_Reg" value="90">
+		<p id="deslisante_Reg_valor"></p>
+		<td> <button onclick="myFunction()">Try it</button>
+		<script>
+		function myFunction() {
+			var x = document.getElementById("deslisante_Reg").value;
+			document.getElementById("deslisante_Reg_valor").innerHTML = x;
+		}
+		</script>
+		
+		</td>
+		
+	</tr>
+	<tr>
+		<td> <label for="url_Reg">URL:</label> </td>
+		<td> <input type="url" id="url_Reg" name="url_Reg"> </td>
+		<td> <input type="submit" value="Validar"> </td>
+	</tr>
+	<tr><td><hr></tr></td>
+	<tr>
+		<td> <label for="perfil_Reg">PERFIL:</label> </td>
+		<td>
+			<select name="perfis" id="perfis">
+				<option value="adm">Administrador</option>
+				<option value="tec	">Técnico</option>
+				<option value="seg">Segurança</option>
+				<option value="visitante">Visitante</option>
+			</select>
+		</td>
+		<td>   <input type="submit" value="Validar"> </td>
+	</tr>	
+
+	<tr>
+		<td> <label for="privado_Reg">PRIVADO?:</label> </td>
+		<td> <input type="checkbox" name="pri" value="Privado"> </td>
+		<td>   <input type="submit" value="Validar"> </td>
+	</tr>
+	<tr>
+		<td> <label for="acesso_Reg">ACESSOS?:</label> </td>
+		<td>
+		<input type="checkbox" name="pri" value="Norte"> Norte
+		<input type="checkbox" name="pri" value="Sul"> Sul
+		<input type="checkbox" name="pri" value="Sul"> Este
+		<input type="checkbox" name="pri" value="Sul"> Oeste
+		</td>
+		<td>  <input type="submit" value="Validar"> </td>
+	</tr>
+	
+	
+	
+
+	<tr><td><hr></tr></td>
+
+	<tr>
+		<td> <label for="data_Reg">DATA:</label> </td>
+		<td> <input type="date" id="data_Reg" name="data_Reg"> </td>
+		<td>   <input type="submit" value="Validar"> </td>
+	</tr>
+
+	<tr>
+		<td><label for="hora_Reg">HORA:</label> </td>
+		<td> <input type="time" id="hora_Reg" name="hora_Reg"> </td>
+		<td>   <input type="submit" value="Validar"> </td>
+	</tr>
+	<tr><td><hr></tr></td>	 
+	<tr>
+		<td> <label for="img_Reg">IMAGEM:</label> </td>
+		<td> <input type="image" id="img_Reg" name="img_Reg"> </td>
+		<td> <input type="submit" value="Validar"> </td>
+	</tr>
+	<tr>
+		<td> <label for="ficheiro_Reg">FICHEIRO:</label> </td>
+		<td> <input type="image" id="ficheiro_Reg" name="ficheiro_Reg"> </td>
+		<td> <input type="submit" value="Validar"> </td>
+	</tr>
+	</table>
+	<br><br>
+	<hr>
+	<input type="submit" value="Submeter">
+	<input type="button" value="Cancelar">
+	<input type="submit" value="Validar Dados">
+	<br><br>
+	<input type="submit" value="Procurar">
+	<input type="button" value="Inserir">
+	<input type="button" value="Editar">
+	<input type="button" value="Eliminar">
+	<br><br>
+	<input type="button" value=" |< ">
+	<input type="button" value=" << ">
+	<input type="button" value=" < ">
+	<input type="number" id="points" name="points" step="3">
+	<input type="button" value=" > "> 
+	<input type="button" value=" >> " step="10">
+	<input type="button" value=" >| ">
+
+</form>
+
+<p> Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->
+<hr> <hr>
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->
+
+<pre>
+Art by Blazej Kozlowski
+                                                        ___________                        
+                                              __..--""""           """"--..__              
+                                          _.-"""""""""""-----...      ______ `.            
+                                       .-"                      l ,-""    \ "-.`.          
+                                    .-"                         ; ;        ;   \ ""--.._   
+                                  .'                           : :         |    ;      .l  
+                            _.._.'                             ; ;  ___    |    ;    .' :  
+                           (  .'                              : :  :   ".  :..-'   .'    ; 
+                            )'                                | ;  ; __.'-"(     .'  .--.: 
+                    ___...-'""""----....____          ______.-' :-/.'       \_.-'  .' .-.\l
+            __..--""                        """"""""""          /\"          ;    / .gs./\;
+        _.-"                                                   /  ;          |   . d$P"Tb  
+     .-""-,                       ____                        /   |          :   ;:$$   $; 
+   .'     ;                    ,""    ""--..__               /    :          |   $$$;   :$ 
+  /"-._  /                     ;       ____..-'    .-"""-.  /     :          ;  _$$$;   :$ 
+ :     ""--.._          ___....+---""""          .'  _._  \/      |         _:-" $$$;   :$ 
+ ;                                              /  .d$$$b./       ;      .-".'   :$$$   $P 
+:            .----...____                      :  dP' `T$P        |   .-" .' _.gd$$$$b_d$' 
+;    __...---|    bug    |----....____         | :$     $b        : .'   (.-"  `T$$$$$$P'  
+;  .';       '----...____;       /    "-.      ; $;     :$;_____..-"  .-"                  
+: /  :                          /        \__..-':$       $$ ;-.    .-"                     
+ Y    ;                        /          ;     $;       :$;|  `.-"                        
+ :    :                       /           |     $$       $$;:.-"                           
+ '$$$ggggp...____            /            :     :$;     :$$                                
+  $$$$$$$$$$$$   """"----...:________....gggg$$$$$$     $$;                                
+  'T$$$$$$$$P'                           T$$$$$$$$$b._.d$P                                 
+    `T$$$$P'                              T$$$$$$$$$$$$$P                                  
+                                           `T$$$$$$$$$P'
+
+</pre>
+
+
+</body>
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->
+<hr> <hr> <!-- SEPARADOR: body / footer-->
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->
+
+<footer>
+    <p><i>Tags</i> utilizadas: </p>
+    <p>Autor: Pedro Lopes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer>
+</html>
+
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->
+<!-- *************************************************************** -->

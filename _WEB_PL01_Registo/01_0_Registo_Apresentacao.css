@@ -1,0 +1,40 @@
+
+
+
+
+
+<style type='text/css'>
+
+
+
+
+
+	h1 { color: red; }
+	p { color: gray; }
+	pre { color: green; }
+	
+	label {
+		display: block;
+		text-align: right;
+		width: 100px;
+		color: gray;  
+	}
+	
+	input, select { background: black; color: gray; }
+
+/* 	body { background: darkblue; }               */
+/* 	background-color: transparent;              */
+/* 	body { background-color: transparent; }    */
+	body { background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); }
+
+
+	html{height: 100px; width: 400px; }
+   
+</style>
+
+
+
+/* - - - FIM  - - - */
+/* - - - FIM  - - - */
+/* - - - FIM  - - - */
+
