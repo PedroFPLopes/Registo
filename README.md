@@ -4,11 +4,10 @@
 ## Registo de Dados
 ###  com texto, com caixas de opção(ões) / escolha(s) / selecção(ões)
 
-###
-(type | id)
-text | id
+###(type | id)
+### text | id
 
-###
+### ef
 
 $$
   \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
