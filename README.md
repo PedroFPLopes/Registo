@@ -5,6 +5,8 @@ $$
 Write your subsection text here.
 $$
 
+$$
+
 \documentclass{article}
 \usepackage{graphicx}
 
@@ -34,3 +36,5 @@ Write your subsection text here.
 Write your conclusion here.
 
 \end{document}
+
+$$
