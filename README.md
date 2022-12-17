@@ -1,7 +1,3 @@
-# Registo
-## Registo 2
-## Registo 3
-
 \documentclass{article}
 \usepackage{graphicx}
 
